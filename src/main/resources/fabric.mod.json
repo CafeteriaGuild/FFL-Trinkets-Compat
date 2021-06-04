@@ -1,35 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ffl-trinkets-compat",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "FFL Trinkets Compat",
+  "description": "Compatibility Mod between Trinkets' Eltra and FallFlyingLib",
   "authors": [
-    "Me!"
+    "AdrianTodt"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/CafeteriaGuild/FFL-Trinkets-Compat",
+    "issues": "https://github.com/CafeteriaGuild/FFL-Trinkets-Compat/issues"
   },
-
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "icon": "assets/ffl-trinkets-compat/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.adriantodt.fallflyinglib.compat.trinkets.TrinketsCompat"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.x",
+    "trinkets": ">=2.6.7",
+    "fallflyinglib": ">=2.0.4"
   },
   "suggests": {
     "another-mod": "*"
